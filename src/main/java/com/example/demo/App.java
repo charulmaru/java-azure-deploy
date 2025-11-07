@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class App {
 
-    @GetMapping("/")
-    public String hello() {
-        return "Hello from Azure App Service 🚀";
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
+    }
+
+    @GetMapping("/")
+    public String home() {
+        return "Hello, Azure + Spring Boot is working!";
     }
 }
